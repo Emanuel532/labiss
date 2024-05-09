@@ -1,0 +1,48 @@
+Prima etapa:
+    Identificare conceptelor domeniului din descrierea problemei si detaliile cazurilor de utilizare:
+    -Profesor
+    -Student
+    -Notă
+    -Raport de note
+    -Autentificare
+    -Secretară
+    
+    
+Identificarea conceptelor si analiza semnificativa a niv. aplicatie:
+
+    Profesor:
+        nume
+        parola
+    Student:
+        nume
+        ID
+    Nota:
+        valoare
+        dată
+    Raport de note:
+        continut
+        data
+    Secretară:
+        nume
+        parola
+        
+Concepte care pot sa fie grupate in colectii de acelasi tip:
+	Notele: Notele trecute de prof. pot sa fie trecute intr-o lista cu note pentru fiecare student. Aceasta se poate include printr-o relatie de agregare intre clasa Note si Student
+	
+        
+Identificare conexiuni conceptuale:
+	Un profesor poate înregistra si actualiza note pentru un student.
+	Un student poate vizualiza notele sale.
+	Profesorul, secretara și studentul pot vizualiza notele.
+	Secretara poate genera rapoarte cu notele.
+	Un profesor poate distribui rapoarte cu notele.
+	
+Promovarea acestor conexiuni conceptale :
+
+    Profesor are o relatie de 1 la N cu Nota.
+    Student are o relatie de 1 la N cu Nota.
+    Secretara are o relatie de 1 la N cu Raport de note.
+    Profesor are o relatie de 1 la N cu Raport de note.
+
+
+

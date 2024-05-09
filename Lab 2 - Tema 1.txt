@@ -1,0 +1,36 @@
+Tema 1. Cerinte:
+* Identificați actorii:
+	Profesor, Student, Secretară, Student cu taxă, Disc
+	
+* Există actori care sunt specializări ale altor actori mai generali? Dacă
+da, identificați care este actorul general și care este actorul specializat. Ce tip de relație trebuie reprezentată între actorul general și specializarea sa?
+
+Da, un astfel de actor este "Student cu taxă" care este o specializare a Student. Relația dintre "Student" și "Student cu taxă" este de generalizare.
+
+* Identificați cazurile de utilizare:
+	- înregistrare note -> salvare note pe disc
+	- actualizare note -> salvare note actualizate pe disc
+	- vizualizare note 
+	- conectare sistem -> esuare conectare -> conectare sistem
+	- generare rapoarte note
+	- distribuire rapoarte cu notele
+	
+*Există cazuri de utilizare folosite întotdeauna de alte cazuri de utilizare? Dacă da, ce tip de relație există între acestea? Identificați cazurile de utilizare folosite întotdeauna și cazurile de utilizare ce le folosesc.
+
+Salvare este mereu folosit de înregistrare note & actualizare note.
+Tip de relație: dependență de tip include
+
+Generare rapoarte note este folosit de distribuire rapoarte cu note.
+Tip de relație: depenență de tip include
+
+Conectare sistem este folosit de eșuare conectare.
+Tip de relație: depenență de tip include
+
+* Există cazuri de utilizare folosite uneori de către un alt caz de uti-
+lizare? Dacă da, ce tip de relație există între acestea? Identificați
+cazurile de utilizare folosite uneori și cazurile de utilizare ce le folos-
+esc.
+
+Această funcție, care este folosită uneori de către un alt caz de utilizare este Eșuare conectare, care este folosită uneori de Conectare sistem.
+
+

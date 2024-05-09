@@ -1,0 +1,9 @@
+E1. 
+Raspuns corect: d)
+Acesta este raspunsul corect deoarece clasa "Carte" are o relatie de compozitie cu clasa "Capitole", fiind construita din unul sau mai multe Capitole
+De asemena clasa "Carte" implementeaza interfata "Produs", astfel avand functiile acesteia
+
+E2.
+Raspuns corect: d)
+acesta este raspunsul corect deoarece "Produs" are o metoda getPret() care trebuie implementata.
+
